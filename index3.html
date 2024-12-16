@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style-main.css">
+    <link rel="stylesheet" href="styles\style3.css">
+    <title>Front&Back</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-info">
+                <img src="images/kotnaarbuze.jpg" alt="avatar">
+                <div>
+                    <p>Группа ЭФБО-04-23</p>
+                    <p>Паркаев Илья Дмитриевич</p>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <ul class="navbar">
+                    <li><a class="link-navbar" href="index1.html">Главная</a></li>
+                    <li><a class="link-navbar" href="index3.html">Первый семестр</a></li>
+                    <li><a class="link-navbar" href="#">Второй семестр</a></li>
+                    <li><a class="link-navbar" href="index2.html">Услуги</a></li>
+                    <li><a class="link-navbar" href="#">Авторизация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    <main class="container">
+        <aside class="aside">
+            <p>Навигация по странице</p>
+            <li><a class="link-aside" href="#lections_first_sem">Лекции</a></li>
+            <li><a class="link-aside" href="#practic_first_sem">Практики</a></li>
+            <li><a class="link-aside" href="#adres_first_sem">Адрес</a></li>
+            <li><a class="link-aside" href="#work_program_first_sem">Рабочая прогоамма</a></li>
+        </aside>
+
+
+        <article class="article">
+            <div class="aside-mobile" id="aside">
+                <p>Навигация по странице</p>
+                <li><a class="link-aside" href="#lections_first_sem">Лекции</a></li>
+                <li><a class="link-aside" href="#practic_first_sem">Практики</a></li>
+                <li><a class="link-aside" href="#adres_first_sem">Адрес</a></li>
+                <li><a class="link-aside" href="#work_program_first_sem">Рабочая программа</a></li>
+            </div>
+            
+            <div class="button-aside">
+                <a href="javascript:void(0);" onclick="myFunction()">
+                    <img id="aside-icon" src="./images/asidebar-open.svg" alt="Навигационная панель" style="display: block; width: 100%;">
+                </a>
+            </div>
+            
+            <script>
+                function myFunction() {
+                    var aside = document.getElementById("aside");
+                    var icon = document.getElementById("aside-icon");
+                    if (aside.style.display === "flex") {
+                        aside.style.display = "none";
+                        icon.src = "./images/asidebar-open.svg";
+                    } else {
+                        aside.style.display = "flex";
+                        icon.src = "./images/asidebar-close.svg";
+                    }
+                }
+            </script>
+
+            <section class="section-padding section-1">
+                <h2>Первый семестр</h2>
+            </section>
+
+            <section class="section-padding section-2">
+                <p><a id="lections_first_sem"></a></p>
+                <h4>Лекции</h4>
+                <div>
+                    <table class="table">
+                        <thead align="left">
+                            <th>Номер</th>
+                            <th>Тема</th>
+                            <th>Посещение</th>
+                        </thead>
+                        <tr>
+                            <td>1</td>
+                            <td>Основы языка HTML</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox" checked></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Углубленное изучение HTML</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Основы работы с CSS</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Bootstrap - работа с фреймворком</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Адаптивная верстка Flexbox и Grid Layout</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Основы языка JavaScript</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Работа с DOM и событиями в JavaScript</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Введение в GitHub и GitHub Pages</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section class="section-padding section-3">
+                <p><a id="practic_first_sem"></a></p>
+                <h4>Практики</h4>
+                <div>
+                    <table class="table">
+                        <thead align="left">
+                            <th>Номер</th>
+                            <th>Тема</th>
+                            <th>Посещение</th>
+                            <th>Выполнение</th>
+                        </thead>
+                        <tr>
+                            <td>1</td>
+                            <td>Основы языка HTML</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox" checked></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox" checked></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Формы и кнопки в HTML</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Таблицы и интерактивные элементы HTML</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Основы работы с CSS</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Работа с классами с CSS</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Работа с сетками и разметкой в HTML</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Адаптивная верстка</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Bootstrap</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Основы языка JavaScript</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Базовые задачи на JS</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>DOM-структура приложений и работа с объектами в языке JS</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Встраивание скриптов</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Отладка сценариев</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Анимации и работа с ними</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>GitHub</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Защита проекта</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                            <td align="right">
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                    </table>
+            </section>
+    
+            <section class="section-padding section-4">
+                <p><a id="adres_first_sem"></a></p>
+                <h4>Занятия проходят по адресу: Проспект Вернадского, 78, Москва, 119454</h4>
+                <div>
+                    <p><div style="position:relative;overflow:hidden;">
+                        <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+                        <a href="https://yandex.ru/maps/213/moscow/house/prospekt_vernadskogo_78/Z04Ycg9gSkMDQFtvfXp3eHVlYQ==/?ll=37.480363%2C55.669965&utm_medium=mapframe&utm_source=maps&z=17.06" style="color:#eee;font-size:12px;position:absolute;top:14px;">Проспект Вернадского, 78 — Яндекс Карты</a>
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.480363%2C55.669965&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjE2ODgxOTM5EkfQoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0L_RgNC-0YHQv9C10LrRgiDQktC10YDQvdCw0LTRgdC60L7Qs9C-LCA3OCIKDePrFUIVC65eQg%2C%2C&z=17.06" frameborder="1" allowfullscreen="true" class="integrated-map"></iframe>
+                    </div></p>
+                </div>
+            </section>
+
+            <section class="section-padding section-5">
+                <p><a id="work_program_first_sem"></a></p>
+                <h4>Рабочая программа</h4>
+                <div class="integrated-pdf">
+                    <embed src="./files/sampleFile.pdf" type="application/pdf">
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container footer">
+            <p>©Паркаев Илья Дмитриевич, 2024</p>
+            <ul class="footer-social">
+                <li><a href="#"><img class="contacts-footer" src="images/whatsapp_grey.svg" alt="whatsapp"></a></li>
+                <li><a href="#"><img class="contacts-footer" src="images/vk_grey.svg" alt="vk"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+li {
+    display: inline-block;
+}
+
+a {
+    transition: all .3s ease;
+}
+
+nav {
+    color: #c7ddff;
+    margin-top: 15px;
+    background-color: #0057bb;
+    border-radius: 50px;
+    padding: 0px 25px;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+footer {
+    padding-top: 16px;
+    background-color: #333440;
+    color: #bebebe;
+}
+
+/* GLOBAL */
+
+.header-img {
+    display: block;
+    max-width: 80px;
+    max-height: 80px;
+    width: 100%;
+    border-radius: 15%;
+}
+
+.link-navbar {
+    color: #c7ddff;
+}
+
+.link-navbar:hover {
+    color: #5fc4bf;
+}
+
+.link-navbar:active {
+    color: #34aaa4;
+}
+
+/* Навигационная панель по странице */
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 180px;
+}
+
+.button-aside {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 50vw;
+}
+
+.aside-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .button-aside {
+        display: block;
+    }
+    .aside {
+        display: none;
+    }
+    .aside-mobile {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+}
+
+/* Размеры видео и картинок */
+
+.main-video {
+    max-width: 854px;
+    max-height: 480px;
+    width: 100%;
+    height: 100%;
+}
+
+.contacts-footer {
+    max-width: 24px;
+    max-height: 24px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.contacts-footer:hover {
+    transform: scale(1.1);
+    filter: brightness(1.5);
+}
+
+/* Форма */
+
+/* Сетка элементов окна формы */
+
+.grid-container-form-column {
+    margin: 10px 10px 10px 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-container-form-line {
+    display: grid;
+    grid-template-columns: 7em 1fr;
+}
+
+.grid-container-form-single-element {
+    display: flex;
+    justify-content: center;
+}

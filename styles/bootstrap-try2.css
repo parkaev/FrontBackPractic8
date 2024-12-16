@@ -1,0 +1,28 @@
+#scrollToTopBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+    font-size: 1.5em;
+    padding: 10px 15px;
+}
+
+section p {
+    text-align: justify;
+}
+
+.contacts-footer {
+    max-width: 24px;
+    max-height: 24px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.contacts-footer:hover {
+    transform: scale(1.1);
+    filter: brightness(1.5);
+}
+
+.modal-dialog {
+    margin: auto auto !important;
+}

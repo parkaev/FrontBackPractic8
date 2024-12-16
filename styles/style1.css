@@ -1,0 +1,36 @@
+.introduce {
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduce > p {
+    display: flex;
+    align-items: center;
+}
+
+.section-1 > .introduce > img {
+    border-radius: 50px;
+    width: 150px;
+    height: 150px;
+}
+
+.section-2 > p{
+    text-align: justify;
+}
+
+.section-2 > div > video{
+    max-width: 854px;
+    max-height: 480px;
+    width: 100%;
+}
+
+.section-3 > div > video{
+    max-width: 854px;
+    max-height: 480px;
+    width: 100%;
+}
+
+.section-3 {
+    text-align: justify;
+}
+

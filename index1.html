@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style-main.css">
+    <link rel="stylesheet" href="./styles/style1.css">
+    <title>Front&Back</title>
+    <script>
+        
+    </script>
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-info">
+                <img src="images/kotnaarbuze.jpg" alt="avatar">
+                <div>
+                    <p>Группа ЭФБО-04-23</p>
+                    <p>Паркаев Илья Дмитриевич</p>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="navbar">
+                    <li><a class="link-navbar" href="index1.html">Главная</a></li>
+                    <li><a class="link-navbar" href="index3.html">Первый семестр</a></li>
+                    <li><a class="link-navbar" href="#">Второй семестр</a></li>
+                    <li><a class="link-navbar" href="index2.html">Услуги</a></li>
+                    <li><a class="link-navbar" href="#">Авторизация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+
+
+    <main class="container">
+        <aside class="aside">
+            <p>Навигация по странице</p>
+            <li><a class="link-aside" href="#frontend">Фронтенд</a></li>
+            <li><a class="link-aside" href="#backend">Бекэнд</a></li>
+        </aside>
+
+        <article>
+            <div class="aside-mobile" id="aside">
+                <p>Навигация по странице</p>
+                <li><a class="link-aside" href="#frontend">Фронтенд</a></li>
+                <li><a class="link-aside" href="#backend">Бекэнд</a></li>
+            </div>
+            
+            <div class="button-aside">
+                <a href="javascript:void(0);" onclick="myFunction()">
+                    <img id="aside-icon" src="./images/asidebar-open.svg" alt="Навигационная панель" style="display: block; width: 100%;">
+                </a>
+            </div>
+            
+            <script>
+                function myFunction() {
+                    var aside = document.getElementById("aside");
+                    var icon = document.getElementById("aside-icon");
+                    if (aside.style.display === "flex") {
+                        aside.style.display = "none";
+                        icon.src = "./images/asidebar-open.svg";
+                    } else {
+                        aside.style.display = "flex";
+                        icon.src = "./images/asidebar-close.svg";
+                    }
+                }
+            </script>
+
+
+            <section class="section-padding section-1">
+                <h2>Добро пожаловать на мой сайт</h2>
+                <div class="introduce">
+                    <p>Меня зовут Паркаев Илья Дмитриевич и я начинающий специалист по веб-разработке.</p>
+                    <img src="images/kotnaarbuze.jpg" alt="avatar" >
+                </div>
+            </section>
+
+            <section class="section-padding section-2">
+                <p><a id="frontend"></a></p>
+                <h3>Фронтенд</h3>
+                <p>Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда - обеспечить удобство использования и эстетическую привлекательность.</p>
+                <div align="center">
+                    <video controls muted><source src="./videos/getReady.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                </div>
+            </section>
+
+            <section class="section-padding section-3">
+                <p><a id="backend"></a></p>
+                <h3>Бекэнд</h3>
+                <p>Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или РНР, а также фреймворки и базы данных для создания логики приложения. Основная задача бэкенда - обеспечить стабильную работу приложения и безопасность данных.</p>
+                <div align="center">
+                    <video controls muted><source src="./videos/spongebob.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                </div>
+            </section>
+        </article>
+    </main>
+
+
+    <footer>
+        <div class="container footer">
+            <p>©Паркаев Илья Дмитриевич, 2024</p>
+            <ul class="footer-social">
+                <li><a href="#"><img class="contacts-footer" src="images/whatsapp_grey.svg" alt="whatsapp"></a></li>
+                <li><a href="#"><img class="contacts-footer" src="images/vk_grey.svg" alt="vk"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Booststrap sample</title>
+</head>
+</head>
+
+
+<body>
+    <p><a id="start-of-page"></a></p>
+    
+    <header class="container-sm">
+        <div class="mx-auto d-flex justify-content-between">
+            <div>
+                <img src="images/kotnaarbuze.jpg" alt="avatar" class="header-img">
+            </div>
+            <div class="d-flex flex-column justify-content-evenly align-items-end">
+                <p style="margin: 0 0;">Группа ЭФБО-04-23</p>
+                <p style="margin: 0 0;">Паркаев Илья Дмитриевич</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="navbar">
+
+                <div class="d-inline-block text-nowrap" style="width: fit-content">
+                    <a>Пример выпадающего списка</a>
+                    <div class="btn-group">
+                        <button type="button" class="p-0 btn btn-dark dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown" aria-expanded="false"
+                                style="background-color: var(--background-color); border: 0">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Пример 1</a></li>
+                            <li><a class="dropdown-item" href="#">Пример 2</a></li>
+                            <li><a class="dropdown-item" href="#">Пример 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <li><a class="text-decoration-none link-navbar" href="#">Главная</a></li>
+                <li><a class="text-decoration-none link-navbar" href="#">Первый семестр</a></li>
+                <li><a class="text-decoration-none link-navbar" href="#">Второй семестр</a></li>
+                <li><a class="text-decoration-none link-navbar" href="#">Услуги</a></li>
+                <li><a class="text-decoration-none link-navbar" href="#">Авторизация</a></li>
+            </ul>
+        </nav>
+
+        <div class="aside-mobile" id="aside">
+            <p>Навигация по странице</p>
+            <li><a class="text-decoration-none  link-aside" href="#">Раздел 1</a></li>
+            <li><a class="text-decoration-none  link-aside" href="#">Раздел 2</a></li>
+            <li><a class="text-decoration-none  link-aside" href="#">Раздел 3</a></li>
+            <li><a class="text-decoration-none  link-aside" href="#">Раздел 4</a></li>
+        </div>
+        
+        <div class="button-aside">
+            <a href="javascript:void(0);" onclick="myFunction()">
+                <img id="aside-icon" src="./images/asidebar-open.svg" alt="Навигационная панель" style="display: block; width: 100%;">
+            </a>
+        </div>
+        
+        <script>
+            function myFunction() {
+                var aside = document.getElementById("aside");
+                var icon = document.getElementById("aside-icon");
+                if (aside.style.display === "flex") {
+                    aside.style.display = "none";
+                    icon.src = "./images/asidebar-open.svg";
+                } else {
+                    aside.style.display = "flex";
+                    icon.src = "./images/asidebar-close.svg";
+                }
+            }
+        </script>
+    </header>
+
+    <main class="container-sm d-flex">
+        <aside class="aside">
+            <p>Навигация по странице</p>
+            <li><a class="text-decoration-none link-aside" href="#">Раздел 1</a></li>
+            <li><a class="text-decoration-none link-aside" href="#">Раздел 2</a></li>
+            <li><a class="text-decoration-none link-aside" href="#">Раздел 3</a></li>
+            <li><a class="text-decoration-none link-aside" href="#">Раздел 4</a></li>
+        </aside>
+        
+        <article>
+            
+
+            <section class="text-justify">
+                <h1>Это заголовок 1</h1>
+                <h2>Это заголовок 2</h2>
+                <h3>Это заголовок 3</h3>
+                <p>Не следует, однако, забывать о том, что повышение уровня гражданского сознания требует определения и уточнения дальнейших направлений развития проекта. Таким образом, курс на социально-ориентированный национальный проект позволяет выполнить важнейшие задания по разработке системы обучения кадров, соответствующей насущным потребностям. Повседневная практика показывает, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.Значимость этих проблем настолько очевидна, что повышение уровня гражданского сознания позволяет выполнить важнейшие задания по разработке существующих финансовых и административных условий! Практический опыт показывает, что реализация намеченного плана развития требует от нас системного анализа дальнейших направлений развития проекта. Практический опыт показывает, что рамки и место обучения кадров требует от нас системного анализа дальнейших направлений развития проекта! Практический опыт показывает, что сложившаяся структура организации обеспечивает актуальность существующих финансовых и административных условий. Задача организации, в особенности же повышение уровня гражданского сознания способствует подготовке и реализации дальнейших направлений развитая системы массового участия. Не следует, однако, забывать о том, что социально-экономическое развитие требует определения и уточнения ключевых компонентов планируемого обновления. Повседневная практика показывает, что начало повседневной работы по формированию позиции обеспечивает актуальность ключевых компонентов планируемого обновления? Практический опыт показывает, что консультация с профессионалами из IT в значительной степени обуславливает создание системы масштабного изменения ряда параметров. Значимость этих проблем...</p>
+            </section>
+            <section>
+                <div class="row">
+
+                    <div class="col-sm">
+                        <div class="border border-dark">
+                            <img src="images/visitka.jpg" alt="Корпоративный сайт" class="mx-auto d-block" width="100%">
+                            <div style="padding: 10px 10px;">
+                                <p>Сайт-визитка</p>
+                                <button class="btn-form">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="border border-dark">
+                            <img src="images/korpsite.jpg" alt="Сайт-визитка" class="mx-auto d-block" width="100%">
+                            <div style="padding: 10px 10px;">
+                                <p>Корпоративный сайт</p>
+                                <button class="btn-form">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="border border-dark">
+                            <img src="images/internetmagz.jpg" alt="Интренет-магазин" class="mx-auto d-block" width="100%">
+                            <div style="padding: 10px 10px;">
+                                <p>Интренет-магазин</p>
+                                <button class="btn-form">Заказать</button>   
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section>
+                <div align="center">
+                    <video controls muted class="main-video"><source src="./videos/getReady.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                </div>
+            </section>
+
+            <section>
+                <div align="center">
+                    <video controls muted class="main-video"><source src="./videos/spongebob.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                </div>
+            </section>
+
+            <section>
+                <p><a id="lections_first_sem"></a></p>
+                <h4>Пример таблицы</h4>
+                <div>
+                    <table class="table table-sm table-striped table-bordered">
+                        <thead align="left" class="table-dark">
+                            <th>Номер</th>
+                            <th>Тема</th>
+                            <th>Посещение</th>
+                        </thead>
+                        <tr>
+                            <td>1</td>
+                            <td>Основы языка HTML</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox" checked></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Углубленное изучение HTML</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Основы работы с CSS</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Bootstrap - работа с фреймворком</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Адаптивная верстка Flexbox и Grid Layout</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Основы языка JavaScript</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Работа с DOM и событиями в JavaScript</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Введение в GitHub и GitHub Pages</td>
+                            <td>
+                                <label id="checkbox"><input type="checkbox"></label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h4>Пример интерактивного аккордеона</h4>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <strong>Раздел 1</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Это пример простого текста для первого пункта.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong>Раздел 2</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Это пример простого текста для второго пункта.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+
+            <section>
+                <h4>Пример слайдера</h4>
+                <div class="border border-dark" style="display: block; max-width: 354px; margin: 0px auto;">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/internetmagz.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/korpsite.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/visitka.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" style="filter: invert(1) !important;" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" style="filter: invert(1) !important;" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+
+            <section>
+                <p><a id="adres_first_sem"></a></p>
+                <h4>Пример интегрированной карты</h4>
+                <div>
+                    <p><div class="embed-responsive embed-responsive-21by9" style="position:relative;overflow:hidden;">
+                        <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+                        <a href="https://yandex.ru/maps/213/moscow/house/prospekt_vernadskogo_78/Z04Ycg9gSkMDQFtvfXp3eHVlYQ==/?ll=37.480363%2C55.669965&utm_medium=mapframe&utm_source=maps&z=17.06" style="color:#eee;font-size:12px;position:absolute;top:14px;">Проспект Вернадского, 78 — Яндекс Карты</a>
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.480363%2C55.669965&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjE2ODgxOTM5EkfQoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0L_RgNC-0YHQv9C10LrRgiDQktC10YDQvdCw0LTRgdC60L7Qs9C-LCA3OCIKDePrFUIVC65eQg%2C%2C&z=17.06" frameborder="1" allowfullscreen="true"></iframe>
+                    </div></p>
+                </div>
+            </section>
+
+            <section>
+                <p><a id="work_program_first_sem"></a></p>
+                <h4>Пример pdf документа</h4>
+                <div class="embed-responsive embed-responsive-21by9">
+                    <embed src="./files/sampleFile.pdf" type="application/pdf">
+                </div>
+            </section>
+
+            
+            
+
+        </article>
+    </main>
+
+
+    <footer class="container-fluid">
+        <div class="row align-items-center">
+            <p class="col-8 offset-2 text-center">© Паркаев Илья Дмитриевич, 2024</p>
+            <div class="col-1 offset-12 d-sm-flex gap-2 align-items-center" style="margin-bottom: 16px">
+                <div>
+                    <a href=""><img class='contacts-footer' src="./images/whatsapp_grey.svg" height="30" alt="WhatsApp"></a>
+                </div>
+                <div>
+                    <a href=""><img class='contacts-footer' src="./images/vk_grey.svg" height="30" alt="VK"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Скрипт Boorstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Окно формы -->
+    <dialog id="Order" class="dialog">
+        <form id="contactForm">
+            <div class="grid-container-form-column">
+                <!-- Заголовок формы -->
+                <div class="grid-container-form-single-element">
+                    <h2>Форма обратной связи</h2>
+                </div>
+
+                <!-- Поле для ввода имени -->
+                <div class="grid-container-form-line">
+                    <label id="name">Имя:</label>
+                    <input type="name" required placeholder="Фамилия Имя Отчество">
+                </div>
+
+                <!-- Поле для ввода электронной почты -->
+                <div class="grid-container-form-line">
+                    <label>Электронная почта:</label>
+                    <input type="email" required placeholder="sample@mail.ru">
+                </div>
+
+                <!-- Поле для ввода телефона -->
+                <div class="grid-container-form-line">
+                    <label>Номер телефона:</label>
+                    <input type="text" id="phone" required placeholder="+7(000)000-00-00">
+                </div>
+
+                <!-- Поле для ввода страны -->
+                <div class="grid-container-form-line">
+                    <label>Страна:</label>
+                    <select required>
+                        <option selected disabled value="">-</option>
+                        <option value="Russia">Россия</option>
+                        <option value="Belarus">Беларусь</option>
+                        <option value="Kazakhstan">Казахстан</option>
+                    </select>
+                </div>
+
+                <!-- Поле для выбора даты -->
+                <div class="grid-container-form-line">
+                    <label>Дата:</label>
+                    <input type="date" required style="margin-right: 115px;">
+                </div>
+
+                <!-- Многострочное текстовое поле для комментариев -->
+                <div class="grid-container-form-line">
+                    <label id="comments">Комментарии:</label>
+                    <textarea id="comments" style="min-height: 5em; max-height: 15em;"></textarea>
+                </div>
+
+                <!-- Поле согласия на обработку данных -->
+                <div class="grid-container-form-single-element">
+                    <label id="checkbox">
+                    <input type="checkbox" required>
+                    Согласен на обработку моих персональных данных
+                    </label>
+                </div>
+
+                <!-- Кнопка отправки формы -->
+                <div class="grid-container-form-single-element">
+                    <button type="submit" class="btn-form-sumbit">Отправить</button>
+                </div>
+            </div>
+
+            <div id="type-of-order"></div>
+        </form>
+    </dialog>
+
+    <!-- Скрипт вызова формы -->
+    <script>
+        const modalElement = document.getElementById("Order");
+        const openBtn = document.querySelectorAll(".btn-form");
+
+        const hidden = document.getElementById("type-of-order");
+        const types = [0, 1, 2];
+
+        for (let i = 0; i < openBtn.length; i++){
+            openBtn[i].addEventListener("click", () => {
+            modalElement.showModal();
+            hidden.innerHTML = "<input name='type' type='hidden' value=" + types[i] + ">";
+        });
+        }
+    </script>
+
+    <!-- Скрипт маски номера телефона -->
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        var element = document.getElementById('phone');
+        var maskOptions = {
+            mask: '+7(000)000-00-00',
+            lazy: true
+        } 
+        var mask = new IMask(element, maskOptions);
+        
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+        unmaskedValue = mask.unmaskedValue;
+
+        if (unmaskedValue.length < 10) {
+            event.preventDefault();
+            alert('Неверный формат номера телефона!');
+        } else {
+            alert('Форма успешно отправлена!');
+        }
+    })
+    </script>
+
+</body>
+</html>

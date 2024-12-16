@@ -1,0 +1,134 @@
+.grid-container {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: [start] 1fr [line2] 1fr [line3] 1fr [end];
+    justify-content: center;
+    justify-items: center;
+}
+
+@media (768px < width < 1500px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (768px < width <= 865px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        gap: 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: [start] 1fr [line2] 1fr [line3] 1fr [end];
+    }
+}
+
+.section-1 > img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+}
+
+.section-2 {
+    text-align: justify;
+}
+
+.section-3 {
+    text-align: justify;
+}
+
+.frame{
+    border: 2px solid black;
+}
+
+.frame:hover {
+    box-shadow: 0px 0px 20px 3px #0057bb;
+    transition: 0.25s;
+}
+
+.btn-form {
+    width: 100px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 50px;
+    color: #f0f0f0;
+    background-color: #73acec;
+}
+
+.btn-form:hover {
+    background-color: #98c0ec;
+}
+
+.btn-form:active {
+    background-color: #afc8e4;
+}
+
+
+
+
+/* Форма */
+
+.dialog {
+    margin: auto auto;
+}
+
+/* Сетка элементов окна формы */
+
+.grid-container-form-column {
+    margin: 10px 10px 10px 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-container-form-line {
+    display: grid;
+    grid-template-columns: 7em 1fr;
+}
+
+.grid-container-form-single-element {
+    display: flex;
+    justify-content: center;
+}
+
+/* Кнопка отправки формы */
+
+.btn-form-sumbit {
+    width: 100px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 50px;
+    color: #f0f0f0;
+    background-color: #73acec;
+}
+
+.btn-form-sumbit:hover {
+    background-color: #98c0ec;
+}
+
+.btn-form-sumbit:active {
+    background-color: #afc8e4;
+}
+
+/* Проверка валидности формы - цвет */
+
+.dialog input:required:invalid {
+    background-color: #e4bbba;
+}
+
+.dialog select:required:invalid {
+    background-color: #e4bbba;
+}
+
+.dialog input:required:valid{
+    background-color: #bcdbff;
+}
+
+.dialog select:required:valid {
+    background-color: #bcdbff;
+}
+
+.dialog textarea {
+    background-color: #bcdbff;
+}
